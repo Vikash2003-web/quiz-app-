@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="toggleSidebar">☰</button>
+    <div class="sidebar-content">
+      <h2>Courses</h2>
+      <ul>
+  <li><a href="topics/dsa.html">Data Structures</a></li>
+  <li><a href="topics/algorithms.html">Algorithms</a></li>
+  <li><a href="topics/webdev.html">Web Development</a></li>
+  <li><a href="topics/python.html">Python</a></li>
+  <li><a href="topics/javascript.html">JavaScript</a></li>
+  <li><a href="topics/ml.html">Machine Learning</a></li>
+  <li><a href="topics/ai.html">Artificial Intelligence</a></li>
+  <li><a href="topics/dbms.html">Database Systems</a></li>
+</ul>
+
+    </div>
+  </div>
+
+  <!-- DSA Header Section -->
+  <header class="dsa-header">
+    <h1>Welcome to the DSA Quiz Challenge </h1>
+    <p>Test your skills in Data Structures and Algorithms Etc. — From Arrays to Graphs, We've Got You Covered!</p>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+      <span id="mode-label">Light Mode</span>
+    </div>
+  </header>
+
+  <!-- Login Screen -->
+  <div id="login-screen">
+    <h2>HEY</h2>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+
+  <!-- Quiz Section -->
+  <div class="quiz" style="display: none;">
+    <div id="question"></div>
+    <div id="answer-buttons"></div>
+    <div id="timer"></div>
+    <button id="next-btn" style="display:none">Next</button>
+  </div>
+
+  <!-- Result & Play Again -->
+  <div id="result" style="display:none"></div>
+  <button id="play-again" style="display:none">Play Again</button>
+  
+<div id="quiz-end" style="display: none;">
+    <h3>Share Your Score!</h3>
+    <a id="whatsapp-share" class="btn" target="_blank">WhatsApp</a>
+    <a id="twitter-share" class="btn" target="_blank">Twitter</a>
+    <button id="copy-link" class="btn">Copy Link</button>
+  </div>
+
+  <!-- Leaderboard -->
+  <div id="leaderboard" style="display: none;">
+    <!-- leaderboard content will be dynamically added -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
